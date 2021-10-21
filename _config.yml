@@ -127,8 +127,16 @@ defaults:
       type: notes
     values:
       layout: Post
+      permalink: /notes/:title
       content-type: notes
 
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: Post
+      permalink: /projects/:title
+      content-type: post
 
 # Exclude from processing.
 # The following items will not be processed, by default.
