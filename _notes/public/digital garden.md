@@ -9,3 +9,5 @@ A digital garden consists of notes on various things the author wants to capture
 It is a place for [learning in public](https://www.swyx.io/learn-in-public/), so some contents will be more authorative and more complete than others. Contents are intended to change over time. 
 
 A good starting point in learning more about how to use or consider information in a digital garden, and to understand the ethos of the gardener as well is the [Digital Garden Terms of service](https://www.swyx.io/digital-garden-tos/) by [Shawn Wang](https://www.swyx.io/).
+
+If you are also interested in setting up an online digital garden, my [[site setup]] might provide some inspiration in terms of tooling.

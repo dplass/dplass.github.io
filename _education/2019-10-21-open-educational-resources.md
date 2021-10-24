@@ -1,6 +1,6 @@
 ---
 title: Open Educational Resources (HBO-i)
-backlink: /education
+backlink: /education.html
 ---
 
 Existing educational materials on research skills are often (1) aimed at university students, not UAS (hbo) students and (2) too general or aimed at very different domains, making it difficult for IT students to see the relevance to their profession. 

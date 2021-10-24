@@ -1,6 +1,6 @@
 ---
 title: Key publications
-backlink: /research
+backlink: /research.html
 ---
 
 ## Most-cited

@@ -129,20 +129,23 @@ defaults:
       path: ""
       type: notes
     values:
-      layout: Post
+      layout: pagewithbacklink
       content-type: notes
+      backlink: "/notes.html"
   - scope:
       path: ""
       type: education
     values:
       layout: pagewithbacklink
       content-type: notes
+      backlink: "/education.html"
   - scope:
       path: ""
       type: research
     values:
       layout: pagewithbacklink
       content-type: notes
+      backlink: "/research.html"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

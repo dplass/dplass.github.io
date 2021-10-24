@@ -1,6 +1,6 @@
 ---
 title: Research in Education (HBO-IT)
-backlink: /education
+backlink: /education.html
 ---
 
 In 2017-2018 I led a workgroup to think about our vision and how to implement research in the HBO-IT study programme. 

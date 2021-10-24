@@ -1,6 +1,6 @@
 ---
 title: Research Design Patterns (HBO-i)
-backlink: /education
+backlink: /education.html
 ---
 
 The DOT framework and the accompanying research methods cards are used in multiple HBO-IT educational programmes. 

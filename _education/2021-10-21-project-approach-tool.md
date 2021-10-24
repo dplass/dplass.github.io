@@ -1,6 +1,6 @@
 ---
 title: Project Approach Tool (HBO-i)
-backlink: /education
+backlink: /education.html
 ---
 
 HBO-i project to realize a handy online tool to determine project approaches using the DOT framework and ICT research methods cards. 
