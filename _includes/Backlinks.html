@@ -30,8 +30,9 @@
 {%- endcomment -%}
 
 <!-- Add backlinks to the current page --> 
+<!-- dplss: Again, terrible coding. such a waste to go through all the pages multiple times + repeated code for different collections -->
 {%- assign link_count = 0 -%}
-{%- assign wiki_link_title = '[' | append: page.title | append: ']' -%}
+{%- assign wiki_link_title = '[' | append: page.slug | append: ']' -%}
 {%- for note in site.notes -%}
         {%- if note.url != page.url -%}
             {%- if note.content contains wiki_link_title -%}
@@ -39,7 +40,14 @@
             {%- endif -%}
     {%- endif -%}
 {%- endfor -%}
-{%- for note in site.posts -%}
+{%- for note in site.research -%}
+        {%- if note.url != page.url -%}
+            {%- if note.content contains wiki_link_title -%}
+                {%- assign link_count = link_count | plus:1 -%}
+            {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- for note in site.education -%}
         {%- if note.url != page.url -%}
             {%- if note.content contains wiki_link_title -%}
                 {%- assign link_count = link_count | plus:1 -%}
@@ -54,7 +62,6 @@
     {%- endif -%}
 {%- endfor -%}
 {%- if link_count > 0 -%}
-{%- assign wiki_link_title = '[' | append: page.title | append: ']' -%}
 {%- assign display_class = 'hide' -%}
 {%- if site.preferences.backlinks.enabled -%}
 {%- assign display_class = 'show' -%}
