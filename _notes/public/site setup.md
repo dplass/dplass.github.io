@@ -28,6 +28,7 @@ Things I still want to improve, add, or fix:
 - Add alternative internal link names
 
 **Could have**
+- Header image support for project pages + the preview feed
 - Tag support (I don't use tags that much, aside from indicating note status and note type)
 - Improve the content parsing code, as it is now pretty inefficient going through arrays multiple times unnecessarily. Not a problem right now, but could be problematic when the digital garden gets larger.
 
