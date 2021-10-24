@@ -78,8 +78,6 @@ preferences:
       enabled: false
   flashcards:
     enabled: false #Not supported in NotesGadern theme
-  homepage: 
-    enabled: true ##If you need a homepage, change this to true and edit _includes/Homepage.html
 
 encoding: utf-8
 
@@ -94,7 +92,11 @@ plugins:
 collections:
     notes:
       output: true
-      permalink: /notes/:title      
+    education:
+      output: true 
+    research:
+      output: true
+
 # Disqus Comments
 disqus:
     # Leave shortname blank to disable comments site-wide.
@@ -111,6 +113,7 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
   
+
 sass:
   style: compressed
 
@@ -127,16 +130,19 @@ defaults:
       type: notes
     values:
       layout: Post
-      permalink: /notes/:title
       content-type: notes
-
   - scope:
       path: ""
-      type: projects
+      type: education
     values:
-      layout: Post
-      permalink: /projects/:title
-      content-type: post
+      layout: pagewithbacklink
+      content-type: notes
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: pagewithbacklink
+      content-type: notes
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -146,7 +152,7 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -157,3 +163,4 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+   - _notes/Private

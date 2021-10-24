@@ -1,0 +1,58 @@
+
+/* for page with rounded image */
+img.is_rounded {
+    border-radius:  50%;
+    width: 10em; 
+}
+
+img.right {
+    margin-left: 2em; 
+    float: right;
+}
+
+img.left {
+    margin-right: 2em; 
+    float: left;
+}
+
+/* note stage icons */
+
+h4.stage-in-progress, h4.stage-draft, h4.stage-note, h4.stage-finished {
+    background: no-repeat top left;
+    background-size:  contain;
+    padding-left:  1.6em;
+}
+
+h4.stage-note {
+    background-image: url("/assets/img/stage-note.svg");
+}
+
+h4.stage-draft {
+    background-image: url("/assets/img/stage-draft.svg");
+}
+
+h4.stage-in-progress {
+    background-image: url("/assets/img/stage-in-progress.svg");
+}
+
+h4.stage-finished {
+    background-image: url("/assets/img/stage-finished.svg");
+}
+
+html[data-theme="dark"] h4.stage-note {
+    background-image: url("/assets/img/stage-note-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-draft {
+    background-image: url("/assets/img/stage-draft-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-in-progress {
+    background-image: url("/assets/img/stage-in-progress-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-finished {
+    background-image: url("/assets/img/stage-finished-dark.svg");
+}
+
+/* automatically capitalize note titles */

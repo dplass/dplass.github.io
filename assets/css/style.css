@@ -86,7 +86,7 @@ header {
 }
 
 main {
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .buttons.for-back-home:not(:last-child) {
@@ -103,6 +103,11 @@ main {
     .buttons.for-back-home:not(:last-child) {
         margin-left: 2rem;
     } 
+}
+
+.profile {
+    border-radius:  50%;
+    width:  10em;
 }
 
 /* Phrasing Style: H1, H2, H3, H4, H5, H6, P, A, UL, LI */

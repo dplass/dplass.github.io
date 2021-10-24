@@ -1,0 +1,10 @@
+- name: About
+  link: /about
+- name: Education
+  link: /education
+- name: Research
+  link: /research
+- name: Notes
+  link: /notes
+- name: Contact
+  link: /contact

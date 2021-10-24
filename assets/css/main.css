@@ -1264,7 +1264,7 @@ a.box-feed:active {
     height: auto;
     width: 100%; }
     .image img.is-rounded {
-      border-radius: 290486px; }
+      border-radius: 50%; }
   .image.is-fullwidth {
     width: 100%; }
   .image.is-square img,
