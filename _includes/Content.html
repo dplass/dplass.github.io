@@ -33,23 +33,30 @@
 <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <div class="content">
     {%- if site.preferences.wiki_style_link.enabled -%}
+    
         {%- assign content_array = content | split:'[[' -%}
         {%- assign external_link_delimiter = '::' -%}
 
         {%- assign link_joiner_delimiter = '$@' -%}
         {%- for item in content_array -%}
-            {%- if forloop.index > 1 -%}
-                {%- assign itemparts = item | split:']]' -%}
-                {%- assign internal_link = itemparts[0] -%}
-                {%- assign external_link = itemparts[0] | split:external_link_delimiter -%}
-                {%- assign sidenote = itemparts[0] | split:sidenote_delimiter -%}
+            {%- if forloop.index > 1 -%} 
+                {%- assign link_content = item | split:']]' | first -%} <!-- dplss: it should only contain it once? -->
+                
+
+                {%- assign internal_link = link_content -%}
+                
+
+                {%- assign external_link = link_content | split:external_link_delimiter -%}
+                {%- assign sidenote = link_content | split:sidenote_delimiter -%}
             
                 {%- if external_link[1] == nil -%} <!-- dplss: this seems rather inefficient to run every time you encounter a link in a page ... -->
-                    {%- assign result_posts = site.posts | where: 'slug',itemparts[0] -%}  
-                    {%- assign result_posts = site.notes | where: 'slug',itemparts[0] -%}
-                    {%- assign result_pages = site.pages | where: 'slug',itemparts[0] -%}
+                    
+                    <!-- dplss: use site.documents to look in all documents irrespective of collection -->
+                    {%- assign result_post = site.documents | where: 'slug',link_content | first -%}
+                    <!-- dplss: todo: probably incorrect behaviour on multiple hits in different collections -->
+
                     {%- assign internal_links = internal_links | append: link_joiner_delimiter | append: internal_link -%}
-                    {%- assign internal_urls = internal_urls | append: link_joiner_delimiter | append: result_posts[0].url | append: result_pages[0].url -%}
+                    {%- assign internal_urls = internal_urls | append: link_joiner_delimiter | append: result_post.url -%}
                 {%- else -%}
                     {%- assign external_links = external_links | append: link_joiner_delimiter | append: external_link[0] -%}
                     {%- assign external_urls = external_urls | append: link_joiner_delimiter | append: external_link[1] -%}
@@ -72,10 +79,7 @@
             {%- elsif url == empty -%}
                 {%- assign link_text = '<a class="stale-link" href="' | append: 'javascript:void(0)' | append: '">' | append: title | append: '</a>' -%}
             {%- else -%}
-                    {%- assign post = site.notes | where: 'slug',title -%}
-                    {%- if post[0].title == nil -%}
-                    {%- assign post = site.posts | where: 'slug',title -%}
-                    {%- endif -%}
+                    {%- assign post = site.documents | where: 'slug',title -%} <!-- dplss: we already have the url, why do we need to search again to get the contents for it?  -->
                     {%- assign excerpt = post[0].content | markdownify | strip_html | truncate: 200 | newline_to_br -%}
                     {%- if site.preferences.pagepreview.enabled -%}
                         {%- assign link_text = '<span class="tooltip"><a href="' | append: url | append: '">' | append: title | append: '</a><span class="right bottom"><span class="tooltip-title">' | append: post[0].title | append: '</span><br/><span class="tooltip-excerpt">' | append: excerpt | append: '</span><i></i></span></span>' -%}
@@ -93,7 +97,7 @@
             {%- assign url = external_url_array[forloop.index0] -%}
             {%- if url == "highlight" -%}
                 {%- if site.preferences.highlighting.enabled -%}
-                    {%- assign color = '#DAEDFF' -%}
+                    {%- assign color = '#DAEDFF' -%} <!-- dplss: why not in css? -->
                     {%- if site.preferences.highlighting.color != nil and site.preferences.highlighting.color != empty and
                         site.preferences.highlighting.color != null -%}
                         {%- assign color = '#' | append: site.preferences.highlighting.color -%}

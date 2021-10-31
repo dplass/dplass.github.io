@@ -3,7 +3,16 @@ layout: default
 ---
 <div class="column is-three-fifths">
     <main>
-        <div class="note-page-section">
+
+        
+        {% if page.image %}
+        <div class="note-page-section with-image">            
+            <img class="note-page-image" src="/assets/img/clear.png" style="background-image: url({{page.image}});" alt="{{page.image-alt}}"> </img> 
+        {% else %}
+        <div class="note-page-section">            
+        {% endif %}  
+            
+               
             <div class="buttons for-back-home">
                 <a class="button is-text button__page-back" href="{{page.backlink}}">
                 
@@ -17,7 +26,17 @@ layout: default
                     </span>
                 </a>
             </div>
-        <h1>{{page.title}}</h1>
+        <h1
+        {% if page.stage %}
+            class="stage-{{page.stage}}"
+        {% endif %}
+        >{{page.title}}</h1>
+        {% if page.created %}
+            <span class="date_info">Created: {{page.created | date: "%b %d, %Y"}}.</span>
+        {% endif %}
+        {% if page.date %}
+            <span class="date_info">Last updated: {{page.date | date: "%b %d, %Y"}}.</span>
+        {% endif %}
         {%- include Content.html -%}
         {%- include Backlinks.html -%}
         </div>

@@ -33,63 +33,30 @@
 <!-- dplss: Again, terrible coding. such a waste to go through all the pages multiple times + repeated code for different collections -->
 {%- assign link_count = 0 -%}
 {%- assign wiki_link_title = '[' | append: page.slug | append: ']' -%}
-{%- for note in site.notes -%}
-        {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-                {%- assign link_count = link_count | plus:1 -%}
-            {%- endif -%}
-    {%- endif -%}
-{%- endfor -%}
-{%- for note in site.research -%}
-        {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-                {%- assign link_count = link_count | plus:1 -%}
-            {%- endif -%}
-    {%- endif -%}
-{%- endfor -%}
-{%- for note in site.education -%}
-        {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-                {%- assign link_count = link_count | plus:1 -%}
-            {%- endif -%}
-    {%- endif -%}
-{%- endfor -%}
-{%- for note in site.pages -%}
-        {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-                {%- assign link_count = link_count | plus:1 -%}
-            {%- endif -%}
-    {%- endif -%}
-{%- endfor -%}
-{%- if link_count > 0 -%}
 {%- assign display_class = 'hide' -%}
 {%- if site.preferences.backlinks.enabled -%}
-{%- assign display_class = 'show' -%}
-{%- endif -%}
-<div class="related {{display_class}}" id="jekyll-seamless-backlinks">
-    <h5 class="block-title">Links to this note</h5>
-    <div class="related-wrapper">
-        {%- for note in site.notes -%}
+    {%- for note in site.documents -%}
         {%- if note.url != page.url -%}
             {%- if note.content contains wiki_link_title -%}
-            <div class="related-group"><a href="{{note.url}}">
-                <h4>{{ note.title }}</h4>
-                <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
-            </a></div>
+                {%- assign display_class = 'show' -%}
+                {% break %}
             {%- endif -%}
         {%- endif -%}
-        {%- endfor -%}
-        {%- for note in site.pages -%}
-        {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-            <div class="related-group"><a href="{{note.url}}">
-                <h4>{{ note.title }}</h4>
-                <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
-            </a></div>
-            {%- endif -%}
-        {%- endif -%}
-        {%- endfor -%}
+    {%- endfor -%}
+    <div class="related {{display_class}}" id="jekyll-seamless-backlinks">
+        <h5 class="block-title">Links to this note</h5>
+        <div class="related-wrapper">
+            {%- for note in site.documents -%}
+                {%- if note.url != page.url -%}
+                    {%- if note.content contains wiki_link_title -%}
+                    <div class="related-group"><a href="{{note.url}}">
+                        <h4>{{ note.title }}</h4>
+                        <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
+                    </a></div>
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+        <br/>
     </div>
-    <br/>
-</div>
 {%- endif -%}

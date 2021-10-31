@@ -55,4 +55,96 @@ html[data-theme="dark"] h4.stage-finished {
     background-image: url("/assets/img/stage-finished-dark.svg");
 }
 
-/* automatically capitalize note titles */
+h1.stage-note, h1.stage-draft, h1.stage-in-progress, h1.stage-finished {
+    background: no-repeat top right;
+    background-size:  1.6em;
+    padding-right:  1.6em;
+}
+
+h1.stage-note {
+    background-image: url("/assets/img/stage-note.svg");
+}
+
+h1.stage-draft {
+    background-image: url("/assets/img/stage-draft.svg");
+}
+
+h1.stage-in-progress {
+    background-image: url("/assets/img/stage-in-progress.svg");
+}
+
+h1.stage-finished {
+    background-image: url("/assets/img/stage-finished.svg");
+}
+
+html[data-theme="dark"] h1.stage-note {
+    background-image: url("/assets/img/stage-note-dark.svg");
+}
+
+html[data-theme="dark"] h1.stage-draft {
+    background-image: url("/assets/img/stage-draft-dark.svg");
+}
+
+html[data-theme="dark"] h1.stage-in-progress {
+    background-image: url("/assets/img/stage-in-progress-dark.svg");
+}
+
+html[data-theme="dark"] h1.stage-finished {
+    background-image: url("/assets/img/stage-finished-dark.svg");
+}
+
+/* date info */
+span.date_info {
+    font-size:  90%;
+    font-style:  normal;
+    opacity:  60%;
+}
+
+.footnotes {
+    font-size:  85%;
+}
+
+.footnotes ol {
+    margin-left:  0;
+    padding-left:  1.2em;
+}
+
+.footnotes li {
+    margin-left:  0;
+    padding-left:  0;
+}
+
+ #copyright-notice {
+    font-weight: normal;
+ }
+
+ #copyright-notice a {
+    /*text-decoration:  underline;*/
+    font-style:  italic;
+ }
+
+.note-page-section.with-image {
+    padding-top:  17em; /* make this at least the height of the note-page-image */
+}
+
+ .note-page-image {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height:  16em;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position:  center center;
+    position:  absolute;
+    top:  0;
+    left:  0;
+    right:  0;
+
+ }
+
+@media screen and (min-width: 769px), print {
+  .note-page-image {
+    
+/*    left:  -8rem;
+    top:  -3rem;
+    right:  -8rem;*/
+  } 
