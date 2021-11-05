@@ -54,6 +54,7 @@ layout: page
 {% endcase %}
     
 {% for item in list %}
+    {% unless item.hidden %}
     <div class="block note-cards">
         <div class="box-feed" data-url="{{site.url}}{{item.url}}">
             <a href="{{item.url}}" style="text-decoration: none;">
@@ -72,4 +73,5 @@ layout: page
             </a>
         </div>
     </div>
+    {% endunless %}
 {%- endfor -%}

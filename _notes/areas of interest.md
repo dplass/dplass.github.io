@@ -10,5 +10,6 @@ This [[digital garden]] contains notes on specific areas of interest related to 
 - [[project acquisition]]
 - [[personal knowledge management]] 
 - [[productivity]]
+- [[learning]]
 
 If any of these area notes do not exist yet, they will be written over the upcoming month or so. It's a work in progress.

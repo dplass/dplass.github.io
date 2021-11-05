@@ -9,8 +9,8 @@ There are many tools for digital [[personal knowledge management]]. I've used Ev
 
 ## Key advantages of Obsidian
 The key advantages of Obsidian for me, in order of importance:
-- **Local-first with markdown text files** - The contents of your notes are yours. They are on your own computer, and they are not in some proprietary format. These text files you can open with any text editor. Future-proof. Another reason this is great is that with plain text files, it is very easy to change your organisation methods, such as moving certain files to folders, replacing tags with links, etc. As you are trying and learning what works for you, this is a huge benefit.
-- **Easy linking with autocompletion** - Type `[[` and an autocompletion dropdown shows up, allowing you to search your vault using only parts of what you remember of the file name.
+- **Local-first with markdown text files** - The contents of your notes are yours. They are on your own computer, and they are not in some proprietary format. These text files you can open with any text editor. Future-proof. Another reason this is great is that with plain text files, it is very easy to change your organization methods, such as moving certain files to folders, replacing tags with links, etc. As you are trying and learning what works for you, this is a huge benefit.
+- **Easy linking with auto-completion** - Type `[[` and an auto-completion dropdown shows up, allowing you to search your vault using only parts of what you remember of the file name.
 - **Speed** - It remains fast, even with thousands of notes (unlike Notion)
 - **Many, many plug-ins** - If want Obsidian to be able to do something, somebody probably already made a plug-in for it. And if you are a programmer, you can also write anything you need yourself. Here are [[my favorite obsidian plugins]].
 - **Automatic backlinks** - Like Notion and Roam, the application shows which notes are linking to the current note. This feature is not available in tools like Evernote and OneNote.
@@ -20,7 +20,7 @@ The key advantages of Obsidian for me, in order of importance:
 - **Easy search with note creation** - When you hit cmd-o / ctrl-o, you can search your notes by (parts of the) file name. And when that file does not exist, you can simply hit enter to immediately create it.
 - **Block transclusion** - I haven't used this much yet, but you can include parts of notes into other nodes, using `![[notename^blockid]]`. After typing the `^` it will show you a drop down so you can easily select the block you need.
 
-Many of these points came from some youtube video I watched, but I cannot find it again. (Great example of why it is important to have good literature notes with information on the source ;) ) If somebody knows, please email me.
+Many of these points came from some YouTube video I watched, but I cannot find it again. (Great example of why it is important to have good literature notes with information on the source ;) ) If somebody knows, please email me.
 I've added some of my own key reasons to that list, and ordered it based on what contributed most to my own decision-making process.
 
 ## Why not Obsidian?

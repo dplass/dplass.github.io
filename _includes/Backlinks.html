@@ -37,24 +37,28 @@
 {%- if site.preferences.backlinks.enabled -%}
     {%- for note in site.documents -%}
         {%- if note.url != page.url -%}
-            {%- if note.content contains wiki_link_title -%}
-                {%- assign display_class = 'show' -%}
-                {% break %}
-            {%- endif -%}
+            {% unless note.hidden %}
+                {%- if note.content contains wiki_link_title -%}
+                    {%- assign display_class = 'show' -%}
+                    {% break %}
+                {% endif %}
+            {%- endunless -%}
         {%- endif -%}
     {%- endfor -%}
     <div class="related {{display_class}}" id="jekyll-seamless-backlinks">
         <h5 class="block-title">Links to this note</h5>
         <div class="related-wrapper">
             {%- for note in site.documents -%}
-                {%- if note.url != page.url -%}
-                    {%- if note.content contains wiki_link_title -%}
-                    <div class="related-group"><a href="{{note.url}}">
-                        <h4>{{ note.title }}</h4>
-                        <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
-                    </a></div>
+                {% unless note.hidden %}
+                    {%- if note.url != page.url -%}
+                        {%- if note.content contains wiki_link_title -%}
+                        <div class="related-group"><a href="{{note.url}}">
+                            <h4>{{ note.title }}</h4>
+                            <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
+                        </a></div>
+                        {%- endif -%}
                     {%- endif -%}
-                {%- endif -%}
+                {% endunless %}
             {%- endfor -%}
         </div>
         <br/>

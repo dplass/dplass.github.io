@@ -167,3 +167,5 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
    - _notes/Private
+   - _notes/template
+   - _notes/.obsidian

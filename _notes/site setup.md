@@ -15,13 +15,15 @@ If you are interested in my source code, you can get it via [github](https://git
 My Jekyll theme is based on [Jekyll Garden](https://github.com/Jekyll-Garden/jekyll-garden.github.io), which has been developed to support  [[digital garden]]s using Obsidian markdown-style notes.
 
 I have been refactoring code to make it better adhere to Jekyll standards (which also makes it easier to extend), and to make it better fit with my own needs. 
-- I've added different [[note stages]] (note, draft, in-progress, finished) which are visualised in the note overview with icons. In the note page, the icon is shown on the right of the title header.
+- I've added different [[note stages]] (note, draft, in-progress, finished) which are visualized in the note overview with icons. In the note page, the icon is shown on the right of the title header.
 - I've changed the content parsing code so it looks at the slug (filename without extension) instead of the note title for internal linking.
-- Fixed the image urls in mode switcher, so now it also works correctly in subfolders (e.g. for a page of a note in the notes folder)
+- Fixed the image urls in mode switcher, so now it also works correctly in sub-folders (e.g. for a page of a note in the notes folder)
 - Show created and last updated dates in page with backlink
 - Added a mail me + page-specific mail subject title to the footer
 - Optimized Backlinks code. Stop looping once identified there is at least one link. And use site.documents to go through all collections. 
 - Header image support for pages with backlink (notes, projects, ...). Specify image and image-alt in the yaml. 
+- Removed the Public / Private folder separation. Excluded templates folder in the yaml config from processing. And instead of having to specify for each file whether you want it in the feed, you can now add ``hidden : true`` to the frontmatter of any file you don't want to show up in listings.
+- Decreases h2 and h3 size, to better distinguish them from each other and h1.
 
 For notes on what I still want to fix, see [[site to do]].
 
