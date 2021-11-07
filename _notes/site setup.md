@@ -26,6 +26,7 @@ I have been refactoring code to make it better adhere to Jekyll standards (which
 - Decreases h2 and h3 size, to better distinguish them from each other and h1.
 - Added subtle transition on hover over the note cards in the listing. Made the dark background a bit less dark in darkmode, so you can see the shadow a bit. Added a bg-light color to have a subtle highlight on hover. Added the anchor tag around the card div instead of inside, which allowed me to remove some unnecessary css.
 - Removed some of the unnecessary !important in the style.css.
+- Adjusted the .related-wrapper and .related-group styling so now the notes listing adjusts like you would expect, adding more notes in a row when the screen width allows.
 
 For notes on what I still want to fix, see [[site to do]].
 

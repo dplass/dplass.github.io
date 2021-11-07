@@ -25,6 +25,5 @@ Things I still want to improve, add, or fix:
 - Tag support (I don't use tags that much, aside from indicating note status and note type)
 - Improve the content parsing code, as it is now pretty inefficient going through arrays multiple times unnecessarily. Not a problem right now, but could be problematic when the digital garden gets larger? Yey for pre-building ;)
 - Make the back button just go back one step using browser history. Makes the behavior more as expected when going through different notes via internal links.
-- Adjust responsiveness widths. It gets very narrow before moving to mobile full width mode.
 
 For more information on the full setup for my site, see [[site setup]].
