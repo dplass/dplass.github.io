@@ -20,64 +20,64 @@ img.left {
 
 /* note stage icons */
 
+.icon-note, .icon-draft, .icon-in-progress, .icon-finished {
+    width:  1rem;
+    height:  1rem;
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position:  bottom center;
+}
+
+.related-group.stage-note, .related-group.stage-draft, .related-group.stage-in-progress, .related-group.stage-finished {
+    background-repeat: no-repeat;
+    background-position: top 1em right 1em;
+    background-size:  1.6em;
+    padding-left:  1.6em;    
+}
+
 h4.stage-in-progress, h4.stage-draft, h4.stage-note, h4.stage-finished {
     background: no-repeat top left;
     background-size:  contain;
     padding-left:  1.6em;
 }
 
-h4.stage-note {
-    background-image: url("/assets/img/stage-note.svg");
-}
-
-h4.stage-draft {
-    background-image: url("/assets/img/stage-draft.svg");
-}
-
-h4.stage-in-progress {
-    background-image: url("/assets/img/stage-in-progress.svg");
-}
-
-h4.stage-finished {
-    background-image: url("/assets/img/stage-finished.svg");
-}
-
-html[data-theme="dark"] h4.stage-note {
-    background-image: url("/assets/img/stage-note-dark.svg");
-}
-
-html[data-theme="dark"] h4.stage-draft {
-    background-image: url("/assets/img/stage-draft-dark.svg");
-}
-
-html[data-theme="dark"] h4.stage-in-progress {
-    background-image: url("/assets/img/stage-in-progress-dark.svg");
-}
-
-html[data-theme="dark"] h4.stage-finished {
-    background-image: url("/assets/img/stage-finished-dark.svg");
-}
-
 h1.stage-note, h1.stage-draft, h1.stage-in-progress, h1.stage-finished {
-    background: no-repeat top right;
+    background-repeat: no-repeat;
+    background-position: top right;
     background-size:  1.6em;
     padding-right:  1.6em;
 }
 
-h1.stage-note {
+h4.stage-note, h1.stage-note, .icon-note {
     background-image: url("/assets/img/stage-note.svg");
 }
 
-h1.stage-draft {
+h4.stage-draft, h1.stage-draft, .icon-draft {
     background-image: url("/assets/img/stage-draft.svg");
 }
 
-h1.stage-in-progress {
+h4.stage-in-progress, h1.stage-in-progress, .icon-in-progress {
     background-image: url("/assets/img/stage-in-progress.svg");
 }
 
-h1.stage-finished {
+h4.stage-finished, h1.stage-finished, .icon-finished {
     background-image: url("/assets/img/stage-finished.svg");
+}
+
+html[data-theme="dark"] h4.stage-note, html[data-theme="dark"] .icon-note {
+    background-image: url("/assets/img/stage-note-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-draft, html[data-theme="dark"] .icon-draft {
+    background-image: url("/assets/img/stage-draft-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-in-progress, html[data-theme="dark"] .icon-in-progress {
+    background-image: url("/assets/img/stage-in-progress-dark.svg");
+}
+
+html[data-theme="dark"] h4.stage-finished, html[data-theme="dark"] .icon-finished {
+    background-image: url("/assets/img/stage-finished-dark.svg");
 }
 
 html[data-theme="dark"] h1.stage-note {
@@ -143,6 +143,45 @@ span.date_info {
     right:  0;
 
  }
+
+ .related-wrapper {
+
+}
+
+.related-wrapper a:hover {
+    text-decoration: none;
+}
+
+.related-group {
+    background-color: var(--bg-sub);
+    transition: all 400ms ease-in-out 0s;
+}
+
+a:hover .related-group {
+    background-color:  var(--bg-light);
+}
+
+.related h4 {
+    color:var(--link)
+}
+
+
+
+a .related-excerpt {
+    transition: all 400ms ease-in-out 0s;
+}
+
+a:hover .related-excerpt {
+    color:var(--link);
+    transition: all 400ms ease-in-out 0s;
+    text-decoration: none !important;
+}
+
+
+.related-meta {
+    filter:  opacity(65%);
+}
+
 
 @media screen and (min-width: 769px), print {
   .note-page-image {

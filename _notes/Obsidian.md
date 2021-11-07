@@ -3,6 +3,8 @@ title: Obsidian
 stage: finished
 created: 2021-10-26
 date: 2021-10-31
+tags:
+  - t-pkm
 ---
 
 There are many tools for digital [[personal knowledge management]]. I've used Evernote extensively, Google keep for a few months, Notion for a summer, OneNote for a day, I've watched videos on other note-taking apps, and even tried analog for a short while, but [Obsidian](https://obsidian.md/)  seems to be the one for me. Why?

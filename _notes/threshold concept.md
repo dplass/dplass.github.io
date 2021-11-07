@@ -3,6 +3,8 @@ title: Threshold concept
 stage: in-progress
 created: 2021-11-04
 date: 2021-11-04
+tags:
+  - t-learning 
 ---
 
 A threshold concept is like "a portal, opening up a new and previously inaccessible way of thinking about something. It represents a transformed way of understanding, or interpreting, or viewing something without which the learner cannot progress.", as defined by Meyer and Land (2003).[^1] That last part – that the learner needs to understand these to progress – is what makes this specific type of concept different from the general idea of [[core concepts]]. 

@@ -5,6 +5,8 @@ created: 2021-10-30
 date: 2021-10-30
 image: /assets/img/books-lights.jpg
 image-alt: Books - Image by StockSnap from Pixabay
+tags:
+  - t-pkm
 ---
 
 Knowledge management as defined as systems to capture, create, store, distribute and use knowledge [^1]. Personal knowledge management then is such a system for personal use. Wright (2005) adds to this: "to enhance the effectiveness, productivity and innovation of individual workers"[^2]

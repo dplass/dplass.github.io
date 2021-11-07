@@ -7,7 +7,8 @@ layout: Stylesheet
 
 html, html[data-theme="light"] {
     --bg-main: #FFFFFF;
-    --bg-sub: #FAFAFC;
+    --bg-sub: #F6F6F9; /* #FAFAFC; */
+    --bg-light: #FAFAFC;
     --color-bis: #363636;
     --text-main: #18181C;
     --text-sub: #5D5D67;
@@ -16,8 +17,9 @@ html, html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --bg-main: #18181C;
-    --bg-sub: #262626;
+    --bg-main: #282828; /* #18181C; */
+    --bg-sub: #303030;
+    --bg-light:  #363636;
     --color-bis: #E6E6E6;
     --text-main: #FAFAFC;
     --text-sub: #FFFFFF;
@@ -30,6 +32,8 @@ html[data-theme="dark"] {
     html, html[data-theme="dark"] {
         --bg-main: #18181C;
         --bg-sub: #262626;
+        --bg-light:  #363636;
+        --color-bis: #E6E6E6;
         --text-main: #FAFAFC;
         --text-sub: #FFFFFF;
         --link: #6D9EFF;
@@ -38,7 +42,9 @@ html[data-theme="dark"] {
 
     html[data-theme="light"] {
 	    --bg-main: #FFFFFF;
-        --bg-sub: #FAFAFC;
+        --bg-sub: #F6F6F9; /* #FAFAFC; */
+        --bg-light: #FAFAFC;
+        --color-bis: #363636;
         --text-main: #18181C;
         --text-sub: #5D5D67;
         --link: #2380ED;
@@ -1194,19 +1200,19 @@ label.srs-toggle {
 }
 
 .related-wrapper {
-    column-count: 2 !important;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  repeat(auto-fill, minmax(240px, 1fr));
+    justify-content:  center;
+    margin-top:  2em;
     grid-gap: 10px;
 }
 
 .related-group {
-    width: 95% !important;
-    height: 100%;
+    height: 100%; 
     border-radius: 8px;
-    cursor: pointer;
     background-color: var(--bg-sub);
-    padding: 16px;
+    padding:  1em;
+    transition: all 400ms ease-in-out 0s;
 }
 
 .related-group:hover {
@@ -1225,7 +1231,7 @@ label.srs-toggle {
 
 
 .related-excerpt {
-    color: var(--text-main) !important;
+    color: var(--text-main);
     padding-left: 10px;
     padding-right: 5px;
     font-size: 12px !important;
@@ -1389,14 +1395,12 @@ label.srs-toggle {
     width: 30% !important;
     }
 
-.related-group {
-    background-color:  var(--bg-sub) !important;
-    margin-left: 10px;
-    width: 90% !important;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    .related-group {
+        background-color:  var(--bg-sub);
+        margin-left: 10px;
+        height: 100%;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1483,58 +1487,59 @@ label.srs-toggle {
 
 @media screen and (max-width: 800px){
 
-.box {
-    width: 80%;
-}
+    .box {
+        width: 80%;
+    }
 
-label {
-    cursor: pointer; 
-}
+    label {
+        cursor: pointer; 
+    }
 
-label.margin-toggle:not(.sidenote-number) {
-    display: inline; 
-}
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline; 
+    }
 
-.sn-left, .sn-right,
-.mn-left, .mn-right {
-    display: none; 
-}
+    .sn-left, .sn-right,
+    .mn-left, .mn-right {
+        display: none; 
+    }
 
-.margin-toggle:checked + .sn-right,
-.margin-toggle:checked + .sn-left,
-.margin-toggle:checked + .mn-left,
-.margin-toggle:checked + .mn-right {
-    display: block;
-    float: left;
-    left: 1rem;
-    clear: both;
-    width: 95%;
-    margin: 1rem 2.5%;
-    vertical-align: baseline;
-    position: relative; 
-}
+    .margin-toggle:checked + .sn-right,
+    .margin-toggle:checked + .sn-left,
+    .margin-toggle:checked + .mn-left,
+    .margin-toggle:checked + .mn-right {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative; 
+    }
 
-.sketch-left, .sketch-right {
-    display: inline-block !important;
-    float: left !important;
-    left: 1rem !important;
-    clear: both !important;
-    width: 95% !important;
-    margin: 1rem 2.5% !important;
-    vertical-align: baseline !important;
-    position: relative !important; 
-    padding-bottom: 10px;
-}
+    .sketch-left, .sketch-right {
+        display: inline-block !important;
+        float: left !important;
+        left: 1rem !important;
+        clear: both !important;
+        width: 95% !important;
+        margin: 1rem 2.5% !important;
+        vertical-align: baseline !important;
+        position: relative !important; 
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 500px){
-.box {
-  width: 100%;
-  max-width: 100% !important;
-  border-left: none !important;
-  border-right: none !important;
-}
-.related-wrapper {
-  grid-template-columns: repeat(1, 1fr);
-}
+    .box {
+      width: 100%;
+      max-width: 100% !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .related-wrapper {
+        /*column-count: 1;*/
+      /*grid-template-columns: repeat(1, 1fr);*/
+    }
 }

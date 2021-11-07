@@ -24,6 +24,8 @@ I have been refactoring code to make it better adhere to Jekyll standards (which
 - Header image support for pages with backlink (notes, projects, ...). Specify image and image-alt in the yaml. 
 - Removed the Public / Private folder separation. Excluded templates folder in the yaml config from processing. And instead of having to specify for each file whether you want it in the feed, you can now add ``hidden : true`` to the frontmatter of any file you don't want to show up in listings.
 - Decreases h2 and h3 size, to better distinguish them from each other and h1.
+- Added subtle transition on hover over the note cards in the listing. Made the dark background a bit less dark in darkmode, so you can see the shadow a bit. Added a bg-light color to have a subtle highlight on hover. Added the anchor tag around the card div instead of inside, which allowed me to remove some unnecessary css.
+- Removed some of the unnecessary !important in the style.css.
 
 For notes on what I still want to fix, see [[site to do]].
 

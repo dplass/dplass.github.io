@@ -3,6 +3,8 @@ title: Learning community
 stage: note
 created: 2021-11-05
 date: 2021-11-05
+tags:
+  - t-learning 
 ---
 
 A [[learning]] community is where different people come together to learn and develop on a specific topic. This can be a key factor in continuous learning and developing your [[expert]]ise.
