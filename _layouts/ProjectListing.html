@@ -90,7 +90,7 @@ layout: page
                                         <!-- <img src="/assets/img/clear.png" class="icon-{{item.stage}}" />  -->
                                     {{item.stage}}</p>
                                     <p class="related-excerpt" style="margin: 0px;">                                        
-                                        {{ item.content | strip_html | strip | remove: "[[" | remove: "]]" | escape | truncate: 100 }}
+                                        {{ item.content | markdownify | strip_html | strip | remove: "[[" | remove: "]]" | escape | truncate: 100 }}
                                     </p>
                                 
                             </div>

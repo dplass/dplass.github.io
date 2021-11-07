@@ -52,10 +52,19 @@
                 {% unless note.hidden %}
                     {%- if note.url != page.url -%}
                         {%- if note.content contains wiki_link_title -%}
-                        <div class="related-group"><a href="{{note.url}}">
-                            <h4>{{ note.title }}</h4>
-                            <p class="related-excerpt" style="margin: 0px;">{{ note.content | markdownify | strip_html | truncate: 100 }}</p>
-                        </a></div>
+                        <a href="{{note.url}}">
+                            <div class="related-group stage-{{note.stage}}">
+                                
+                                    <h4>{{ note.title }}</h4>
+                                    <p class="related-excerpt related-meta" style="margin: 0px;">{{note.date | date: "%b %d, %Y"}} | 
+                                        <!-- <img src="/assets/img/clear.png" class="icon-{{item.stage}}" />  -->
+                                    {{note.stage}}</p>
+                                    <p class="related-excerpt" style="margin: 0px;">                                        
+                                        {{ note.content | markdownify | strip_html | strip | remove: "[[" | remove: "]]" | escape | truncate: 100 }}
+                                    </p> 
+                                
+                            </div>
+                        </a>
                         {%- endif -%}
                     {%- endif -%}
                 {% endunless %}
@@ -63,4 +72,26 @@
         </div>
         <br/>
     </div>
+
+    <div class="related {{display_class}}" id="jekyll-seamless-backlinks">
+            <div class="related-wrapper">
+                {%- for item in list -%}
+                    {% unless item.hidden %}
+                        <a href="{{item.url}}">
+                            <div class="related-group stage-{{item.stage}} {% for tag in item.tags %} {{tag}} {% endfor %} ">
+                                
+                                    <h4>{{ item.title }}</h4>
+                                    <p class="related-excerpt related-meta" style="margin: 0px;">{{item.date | date: "%b %d, %Y"}} | 
+                                        <!-- <img src="/assets/img/clear.png" class="icon-{{item.stage}}" />  -->
+                                    {{item.stage}}</p>
+                                    <p class="related-excerpt" style="margin: 0px;">                                        
+                                        {{ item.content | strip_html | strip | remove: "[[" | remove: "]]" | escape | truncate: 100 }}
+                                    </p>
+                                
+                            </div>
+                        </a>
+                    {% endunless %}
+                {%- endfor -%}
+            </div>
+        </div>
 {%- endif -%}
