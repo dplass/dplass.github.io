@@ -23,7 +23,7 @@ The course is taught by Jon and Missy Butcher who are both successful entreprene
 
 The course is about 500usd. There were a couple of variations on offer. It is worth it to check which version allows you to get a refund when you go through the entire course and finish writing your own lifebook (which used to be a default perk). Personally, this was a good motivator to keep up with the lessons and actually finish the course. (I am Dutch.) 
 
-Later I found out that if you sign up for Lifebook Mastery, all the basic Lifebook videos are also available, at 30usd per month. The video interface used for the older videos in that mobile app has less functionality however. You can't easily click to specific moments in the video, and it forgets where you left off the last time. But it might be a relatively low-cost way to check out the materials and see if this is indeed what you want to do.
+Later I found out that if you sign up for [Lifebook Mastery](https://www.mylifebook.com/mastery), all the basic Lifebook videos are also available, at 30usd per month (and first month free). The video interface used for the older videos in that mobile app has less functionality however. You can't easily click to specific moments in the video, and it forgets where you left off the last time. But it might be a relatively low-cost way to check out the materials and see if this is indeed what you want to do.
 
 ## Review
 In 2019 I've gone through the exercises when a friend took the course. In January 2023 I took the course myself. Some life events made it a good time to reflect.
@@ -33,6 +33,8 @@ While what I did in 2019 was already helpful, actually going through the course 
 Most workshops, courses and books focus on a specific aspect of life, so it was refreshing to go through something that looks at all aspects of life and then also looks at the integration of all of them into one life vision. 
 
 It was also good to be reminded of the value of each of these categories. You might think there is not enough time to work towards some ideal vision for 11 categories, but there are quick and easy things you can do daily to move things forward. For example, you could start building a meditation habit of 1 minute a day, and you will already notice how that helps bring some calm and clarity in your life. Meditation is one of those things that actually helps in multiple categories, from Health, Intellectual and Emotional to your interactions with the people around you in Love, Parenting and Career. As Jon often points out: "A win somewhere is a win everywhere". Another example: when you start working out regularly, you will probably feel better about your body (Emotional), which will also help your Love Relationship. And you will have more energy and confidence which will help in all categories. 
+
+While this is not presented as a [[productivity]] course, it will definitely help you thrive as a human being, by clarifying your vision and purpose, so you can make better decisions more easily, and be more goal-oriented both for personal and work-related goals.
 
 To get the most value out of the workshop, I recommend the following:
 - Go for a version in which you get **the 500usd refund as a motivator** to actually go through it all in these 6 weeks.

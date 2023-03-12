@@ -4,7 +4,7 @@ stage: finished
 created: 2021-10-26
 date: 2021-10-31
 tags:
-  - t-pkm
+  - pkm
 ---
 
 There are many tools for digital [[personal knowledge management]]. I've used Evernote extensively, Google keep for a few months, Notion for a summer, OneNote for a day, I've watched videos on other note-taking apps, and even tried analog for a short while, but [Obsidian](https://obsidian.md/)  seems to be the one for me. Why?
@@ -28,7 +28,6 @@ I've added some of my own key reasons to that list, and ordered it based on what
 ## Why not Obsidian?
 - **You have to set up syncing yourself** (can be done with e.g. dropbox) **or pay** a small monthly fee
 - **Setting up any digital [[personal knowledge management]] system properly takes time** to figure out:  What are its features? What do you want to use it for? What then seems to be a functional setup that will work in the long-term? A system with less features like Evernote might therefore be easier -- less choices to make.
-- **You can only edit in edit mode, in markdown** for now, not in preview mode. I work around this by using a theme that looks very similar in edit mode and in preview mode, and by using the [Ozan's plugin](https://github.com/ozntel/oz-image-in-editor-obsidian) that transcludes (previews) images, pdfs, iframes, and other transclusions when in edit mode. Only for rendering things like in-note dataview and task queries I still need preview mode.
-- **This system is quite text-oriented** - Although you can add pictures, graphs, etc. The system still feels much more text-oriented than say Notion ([aw](https://www.reddit.com/r/Notion/comments/i8tz0p/notion_dashboard/), and this also affects its ease of use, especially for non-programmers. It is probably possible to create plugins to make it feel more visual. Perhaps with specifying a background image and icon to generate a nice visual header? Hmm...
-- **It is still in beta?** - It is less polished than some other solutions. That being said, It does not feel very beta to me at this stage.
-- **Quick capture** - For many other tools like Evernote many integrations with other tools already exist, making quick capture from things like mail, ebooks, task managers is readily available. But good news: Readwise now has an Obsidian plug-in!
+- **You can only edit in edit mode, in markdown**. Update January 2023: You can now preview most things already in edit mode. Editing is in markdown, but this is easy to learn and you can also use the standard shortcuts for most things (or set them up). You can install a plugin like MAKE.md to also make the styling more point-and-click.
+- **This system is quite text-oriented** - Although you can add pictures, graphs, etc. The system still feels much more text-oriented than say Notion ([aw](https://www.reddit.com/r/Notion/comments/i8tz0p/notion_dashboard/), and this also affects its ease of use, especially for non-programmers. Update January 2023: There are various plugins now that make Obsidian more similar to Notion. Check out the following plugins: Banners, Icon Folder, and DB Folder. There are good videos explaining these plugins on YouTube. MAKE.md also seems very promising, but it does have some strange quirks with the Catpucchin style.
+- **Quick capture** - For many other tools like Evernote many integrations with other tools already exist, making quick capture from things like mail, ebooks, task managers is readily available. Personally, I'd rather not import too much automatically, to keep my vault from cluttering up with less intentional content that I don't have the time to process and probably will never look at again. I do make quick notes on the go with the mobile app, use Todoist to quick capture tasks, and highlight things in ebooks and pdfs to make it easier to quickly find the most relevant information at a later time..
