@@ -20,6 +20,7 @@ Things I still want to improve, add, or fix:
 - Add alternative internal link names with pipe syntax - tried to work on this, but there is some additional processing going on somewhere in the background that makes it more difficult than I thought.
 
 **Could have**
+- Other icons for the note stages. The openmoji ones do not work well when small.
 - Support for different types of document listings, with or without images, also smaller like the backlinks listing
 - Graph view showing the links between notes
 - Tag support (I don't use tags that much, aside from indicating note status and note type)

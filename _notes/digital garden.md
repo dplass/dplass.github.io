@@ -5,6 +5,8 @@ date : 2021-10-14
 stage: in-progress
 image: /assets/img/japanese-garden.jpg
 image-alt: Japanese Garden - Image by Luke Phang from Pixabay
+tags:
+  - pkm
 ---
 
 A digital garden is a type of web presence which is [somewhere in-between a tweet and a blog](https://maggieappleton.com/garden-history), in terms of the amount of structure and finality of the contents (see [[note stages]]). Like a garden, it's grown slowly over time, by [tending to notes and planting new ones](https://maggieappleton.com/garden-history). 

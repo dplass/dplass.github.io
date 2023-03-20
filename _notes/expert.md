@@ -4,7 +4,7 @@ stage: draft
 created: 2021-11-05
 date: 2021-11-06
 tags:
-  - t-learning 
+  - learning 
 ---
 
 As a relatively young [[research line]] in the group on relatively young topics such as XR and persuasive technology, an interesting question is: When can we call ourselves experts in these fields? And how do we develop expertise ourselves in such relatively new fields?

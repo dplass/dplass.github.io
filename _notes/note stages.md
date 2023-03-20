@@ -2,9 +2,9 @@
 title: Note stages
 created : 2021-10-24
 date : 2021-10-24
-stage: draft
+stage: in-progress
 tags:
-  - t-pkm 
+  - pkm 
 ---
 
 Notes in a [[digital garden]] have different stages of development. 
